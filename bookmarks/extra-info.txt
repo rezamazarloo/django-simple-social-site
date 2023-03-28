@@ -1,0 +1,37 @@
+## install django social auth
+pip install pip install git+https://github.com/python-social-auth/social-app-django.git@20fabcd7bd9a8a41910bc5c8ed1bd6ef2263b328
+
+
+## add domain to localhost
+add "127.0.0.1 mysite.com" to:
+C:\Windows\System32\Drivers\etc\hosts
+
+
+## install django extentions (to use runserver plus with ssl)
+pip install git+https://github.com/django-extensions/django-extensions.git@25a41d8a3ecb24c009c5f4cac6010a091a3c91c8
+
+
+## install werkzeug debuger for runserver plus:
+pip install werkzeug==2.2.2
+
+
+## installl pyOpenSSL to run runserver_plus with ssl:
+pip install pyOpenSSL==22.0.0
+
+
+## run server plus:
+python manage.py runserver_plus --cert-file cert.crt
+
+
+## when using runserver plus if see following error downgrade cryptography package
+AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'
+pip install --force-reinstall "cryptography==38.0.4"
+
+
+## if our custom domain didn't work properly(mysite.com):
+- also check with both runserver and runserver_plus if in both the domain didn't work on local:
+it's because windows is caching and restarting system will make it work.
+- turn off proxy or vpn or v2ray
+
+
+## 
