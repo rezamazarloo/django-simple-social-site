@@ -4,3 +4,4 @@ db.sqlite3
 media
 cert.crt
 cert.key
+3.0.0
