@@ -34,4 +34,10 @@ it's because windows is caching and restarting system will make it work.
 - turn off proxy or vpn or v2ray
 
 
-## 
+## if include facebook auth backend in settings.py and this error ocured:
+ModuleNotFoundError: No module named 'jose'
+do the followings to solve  it:
+- pip install python-jose>=3.0.0
+- pip install social-auth-core
+
+

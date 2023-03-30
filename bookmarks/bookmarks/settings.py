@@ -145,4 +145,18 @@ PASSWORD_HASHERS = [
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "account.authentication.EmailAuthBackend",
+    "social_core.backends.facebook.FacebookOAuth2",
+    "social_core.backends.twitter.TwitterOAuth",
+    "social_core.backends.google.GoogleOAuth2",
 ]
+
+SOCIAL_AUTH_FACEBOOK_KEY = "586967010027184"
+SOCIAL_AUTH_FACEBOOK_SECRET = "ee7e57601ac41864c83bcf474aa57955"
+# SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
+
+SOCIAL_AUTH_TWITTER_KEY = "BZXOzJzsEZqbq8xOlPneDi1CD"
+SOCIAL_AUTH_TWITTER_SECRET = "dgkTrkc4gY2xJfk6X6ORqTzMh5agZzElOCDw0e8qwPVLD2vyRF"
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "217522868361-ofgrobi871kc9fu9kd0u8p89sp5bsh4o.apps.googleusercontent.com"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+
